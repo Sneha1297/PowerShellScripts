@@ -10,3 +10,14 @@ $temp = New-TemporaryFile
 $temp.FullName
 gps | Out-File $temp.FullName
 notepad $temp.FullName
+$item=Get-ChildItem *.txt
+$item
+Get-ChildItem -Directory 
+dir -ad
+Get-ChildItem -Attributes Compressed
+ $res=Get-ChildItem -Recurse | Where-Object { $_.LastWriteTime -lt "02/01/2019" }
+$compareDate = (Get-Date).AddDays(-30) 
+Get-ChildItem -Recurse | Where-Object { $_.LastWriteTime -ge $compareDate }
+[DateTime]::IsLeapYear(2008) 
+$daysTillChristmas = [DateTime] "December 25" - (Get-Date) 
+$daysTillChristmas.Days 
