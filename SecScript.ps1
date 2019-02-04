@@ -27,4 +27,10 @@ function ConvertFahrenheitToCelsius([double] $fahrenheit)
 
 
 $Server = Read-Host -Prompt 'Input your server  name'
+Get-ChildItem | Select-Object Name
+Get-ChildItem -Rec | Where-Object { $_.DirectoryName -nGet-ChildItem -Rec | Where-Object { $_.Length -gt 20mb } |     Sort-Object -Descending Length | Select-FilteredObject |     Remove-Item -WhatIf
 
+
+Get-ChildItem | Select-Object Name
+Get-ChildItem '[My File].txt' | Select-Object Name 
+Get-ChildItem -LiteralPath '[My File].txt' | Select-Object Name
